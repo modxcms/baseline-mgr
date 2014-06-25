@@ -965,9 +965,9 @@ body.ext-ie7 .x-superboxselect-item {
 
 /* Panel description text */
 .panel-desc {
-  background-color: #F7F7F7;
-  border: 1px solid #E7E7E7 !important;
-  color: #5A5A5A;
+  background-color: $offWhite;
+  border: 1px solid darken($offWhite, 25%) !important;
+  color: $darkNeutral;
   line-height: 1.5;
   margin-top: 5px;
   padding: 15px !important;
@@ -987,13 +987,13 @@ body.ext-ie7 .x-superboxselect-item {
 
 .win-desc {
   background: #DFDFDF;
-  background: -moz-linear-gradient(center bottom, #dfdfdf 0%, #f4f4f4 100%) repeat scroll 0 0 transparent;
-  background: -ms-linear-gradient(center bottom, #dfdfdf 0%, #f4f4f4 100%);
-  background: -o-linear-gradient(center bottom, #dfdfdf 0%, #f4f4f4 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #dfdfdf));
-  background: -webkit-linear-gradient(center bottom, #dfdfdf 0%, #f4f4f4 100%);
-  background: linear-gradient(center bottom, #dfdfdf 0%, #f4f4f4 100%);
-  border-bottom: 1px solid #CCC !important;
+  background: -moz-linear-gradient(center bottom, lighten($neutral, 15%) 0%, $offWhite 100%) repeat scroll 0 0 transparent;
+  background: -ms-linear-gradient(center bottom, lighten($neutral, 15%) 0%, $offWhite 100%);
+  background: -o-linear-gradient(center bottom, lighten($neutral, 15%) 0%, $offWhite 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $offWhite), color-stop(100%, lighten($neutral, 15%)));
+  background: -webkit-linear-gradient(center bottom, lighten($neutral, 15%) 0%, $offWhite 100%);
+  background: linear-gradient(center bottom, lighten($neutral, 15%) 0%, $offWhite 100%);
+  border-bottom: 1px solid $neutral !important;
   border: 0 none;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F4F4F4,endColorstr=#DFDFDF,GradientType=0);
   margin-top: 0;
@@ -1001,12 +1001,12 @@ body.ext-ie7 .x-superboxselect-item {
 }
 
 .win-desc p {
-  color: #555;
+  color: lighten($almostBlack, 10%);
   font-size: 13px;
   font-style: italic;
   line-height: 1.4;
   padding: 0 10px 10px;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 $white;
 }
 
 /* All the other wrapped element (forms need to be wrapped in a panel isolated from the other components) */
@@ -1037,7 +1037,7 @@ body.ext-ie7 .x-superboxselect-item {
 }
 
 .modx-tv {
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid $offWhite;
   margin: 0;
   padding: 15px 0 !important;
   width: 100%;
@@ -1151,14 +1151,14 @@ body.ext-ie7 .x-superboxselect-item {
 }
 
 .crumbs {
-  background: -moz-linear-gradient(center bottom, gainsboro 0%, #fcfcfc 100%) repeat scroll 0 0 transparent;
-  background: -ms-linear-gradient(center bottom, gainsboro 0%, #fcfcfc 100%);
-  background: -o-linear-gradient(center bottom, gainsboro 0%, #fcfcfc 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, gainsboro));
-  background: -webkit-linear-gradient(center bottom, gainsboro 0%, #fcfcfc 100%);
-  background: linear-gradient(center bottom, gainsboro 0%, #fcfcfc 100%);
-  border-bottom: 1px solid #EFEFEF;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fcfcfc,endColorstr=#dcdcdc,GradientType=0);
+  background: -moz-linear-gradient(center bottom, gainsboro 0%, $offWhite 100%) repeat scroll 0 0 transparent;
+  background: -ms-linear-gradient(center bottom, gainsboro 0%, $offWhite 100%);
+  background: -o-linear-gradient(center bottom, gainsboro 0%, $offWhite 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $offWhite), color-stop(100%, gainsboro));
+  background: -webkit-linear-gradient(center bottom, gainsboro 0%, $offWhite 100%);
+  background: linear-gradient(center bottom, gainsboro 0%, $offWhite 100%);
+  border-bottom: 1px solid darken($offWhite, 15%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$offWhite,endColorstr=$neutral,GradientType=0);
   height: 34px;
 }
 
@@ -1170,7 +1170,7 @@ body.ext-ie7 .x-superboxselect-item {
   font-weight: normal;
   line-height: 35px;
   padding: 0 20px 0 15px;
-  text-shadow: 0 1px 0 #FFF;
+  text-shadow: 0 1px 0 $white;
 }
 
 .crumbs li button {
@@ -1210,6 +1210,7 @@ body.ext-ie7 .x-superboxselect-item {
     font-weight: bold;
 }
 */
+
 /* LIGHTBOX */
 
 .breadcrumbs .panel-desc {
@@ -1291,7 +1292,7 @@ body.ext-ie7 .x-superboxselect-item {
   width: 100%;
 }
 #ux-lightbox-dataContainer {
-  background-color: #ffffff;
+  background-color: $white;
   font: $fontSmall;
   font-size: 10px;
   overflow: auto;
@@ -1323,7 +1324,7 @@ body.ext-ie7 .x-superboxselect-item {
 }
 #ux-lightbox-overlay,
 #ux-lightbox-shim {
-  background-color: #000;
+  background-color: $black;
   border: 0 none;
   height: 500px;
   left: 0;
@@ -1346,17 +1347,17 @@ body.ext-ie7 .x-superboxselect-item {
   padding: 10px 5px 35px;
 }
 .x-grid3-cell-inner.x-grid3-col-main h3 {
-  color: #555555;
+  color: $almostBlack;
   font: $baseText;
   font-size: 20px;
   line-height: 1;
   margin: 0 0 2px;
 }
 .x-grid3-cell-inner.x-grid3-col-main  .not-installed {
-  color: #999999;
+  color: $grey;
 }
 .package-installed {
-  color: gray;
+  color: $grey;
   opacity: .5;
 }
 #modx-grid-package .green {
@@ -1375,10 +1376,10 @@ body.ext-ie7 .x-superboxselect-item {
 }
 /* Package browser */
 .home-panel ol {
-  border-top: 1px solid #CACACA;
+  border-top: 1px solid lighten($grey, 15%);
 }
 .home-panel ol li {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid lighten($grey, 25%);
 }
 .home-panel ol li:first-child {
   border-top-color: 0 none;
@@ -1400,16 +1401,16 @@ body.ext-ie7 .x-superboxselect-item {
 }
 .home-panel ol li:hover button {
   background: transparent url($imgPath + 'style/search.png') no-repeat scroll right center;
-  color: #3D4349;
+  color: $darkNeutral;
 }
 .home-panel ol li .highlighted {
-  color: #909090;
+  color: $grey;
   float: right;
   font-size: 10px;
   padding: 13px 10px 0;
 }
 .home-panel ol li button .ct {
-  color: #AAA;
+  color: $grey;
   margin-right: 10px;
 }
 .home-panel .one_half {
@@ -1423,7 +1424,7 @@ body.ext-ie7 .x-superboxselect-item {
   max-height: none;
 }
 .home-panel .provider_name {
-  background-color: #9bb3bf;
+  background-color: $midsky;
   line-height: 1.8;
 }
 .home-panel .pnl_instructions {
@@ -1435,7 +1436,7 @@ body.ext-ie7 .x-superboxselect-item {
   margin-top: 15px;
 }
 .home-panel .stats p {
-  color: #777777;
+  color: darken($grey, 20%);
   font-size: 12px;
   font-style: italic;
   line-height: 1.5;
@@ -1480,7 +1481,7 @@ body.ext-ie7 .x-superboxselect-item {
   font: $fontSmall;
 }
 .modx-pb-thumb {
-  border: 1px solid #dddddd;
+  border: 1px solid $neutral;
   height: 80px;
   line-height: 80px;
   padding: 5px;
@@ -1503,12 +1504,12 @@ body.ext-ie7 .x-superboxselect-item {
   text-align: center;
 }
 .modx-pb-view-ct .x-view-over {
-  border: 1px solid #dddddd;
+  border: 1px solid $neutral;
   padding: 4px;
 }
 .modx-pb-view-ct .x-view-selected {
-  background: #DFEDFF;
-  border: 1px solid #6593cf;
+  background: $softligthBlue;
+  border: 1px solid lighten($colorSplash, 20%);
   padding: 4px;
 }
 .modx-pb-view-ct .x-view-selected .thumb {
@@ -1530,14 +1531,14 @@ body.ext-ie7 .x-superboxselect-item {
   text-align: center;
 }
 .modx-pb-details-info {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid lighten($grey, 20%);
   font: $fontSmall;
   margin-top: 5px;
   padding: 5px;
   text-align: left;
 }
 .modx-pb-details-info b {
-  color: #555;
+  color: darken($almostBlack, 10%);
   display: block;
   margin-bottom: 4px;
 }
@@ -1566,8 +1567,8 @@ body.ext-ie7 .x-superboxselect-item {
   background-color: transparent;
 }
 .modx-template-detail .aside-details {
-  background-color: #FDFDFD;
-  border: 1px solid #E0E0E0;
+  background-color: $almostWhite;
+  border: 1px solid darken($offWhite, 10%);
   margin-right: 0;
 }
 .modx-template-detail .selected h5 {
@@ -1577,7 +1578,7 @@ body.ext-ie7 .x-superboxselect-item {
 }
 .modx-template-detail .selected img {
   border-radius: 3px;
-  border: 1px solid #aaa;
+  border: 1px solid $grey;
   height: 80px;
   width: 90px;
 }
@@ -1585,7 +1586,7 @@ body.ext-ie7 .x-superboxselect-item {
   margin-bottom: 25px;
 }
 .modx-template-detail .item p, .modx-template-detail .item li {
-  color: #888;
+  color: darken($grey, 15%);
   line-height: 1.4;
 }
 .modx-template-detail .item a {
@@ -1604,24 +1605,24 @@ body.ext-ie7 .x-superboxselect-item {
   margin-top: 0;
 }
 .modx-template-detail .selected {
-  border-bottom: 1px solid #E0E0E0;
-  color: #5B7A98;
+  border-bottom: 1px solid darken($offWhite, 10%);
+  color: $mutedblue;
   padding: 15px;
   text-align: center;
 }
 .modx-template-detail .description {
-  background-color: #F3F3F3;
-  border-bottom: 1px solid #E0E0E0;
-  border-top: 1px solid #FFFFFF;
-  color: #666666;
+  background-color: $offWhite;
+  border-bottom: 1px solid darken($offWhite, 20%);
+  border-top: 1px solid $white;
+  color: $grey;
   font-size: 10px;
   line-height: 1.2;
   margin-left: 1px;
   padding: 15px;
-  text-shadow: 0 1px 0 #FFFFFF;
+  text-shadow: 0 1px 0 $white;
 }
 .modx-template-detail .infos {
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid $white;
   margin-left: 1px;
   padding: 15px;
 }
@@ -1629,7 +1630,7 @@ body.ext-ie7 .x-superboxselect-item {
   font-size: 10px;
 }
 .modx-template-detail .infos ul li .infoname {
-  color: #AAAAAA;
+  color: $grey;
   font-weight: bold;
   width: 50%;
 }
@@ -1643,9 +1644,9 @@ body.ext-ie7 .x-superboxselect-item {
   padding: 0;
 }
 .thumb-wrapper {
-  background-color: #F5F5F5;
+  background-color: $offWhite;
   border-radius: 2px;
-  border: 1px solid #ccc;
+  border: 1px solid darken($offWhite, 20%);
   cursor: pointer;
   float: left;
   margin: 0 15px 15px 0;
@@ -1657,7 +1658,7 @@ body.ext-ie7 .x-superboxselect-item {
 }
 .thumb-wrapper .thumb {
   background-color: #fff;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid darken($offWhite, 20%);
   height: 95px;
   margin: 0 auto;
   width: 132px;
@@ -1679,11 +1680,11 @@ body.ext-ie7 .x-superboxselect-item {
   display: block;
   overflow: hidden;
   text-align: center;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 $white;
 }
 .thumb-wrapper span.downloaded {
-  background-color: #658F1A;
-  color: #fff;
+  background-color: lighten($darkGreen, 15%);
+  color: $white;
   font-weight: bold;
   padding: 5px 0;
   position: absolute;
@@ -1699,19 +1700,19 @@ body.ext-ie7 .x-superboxselect-item {
   margin-top: 10px;
 }
 .thumb-wrapper .downloads {
-  color: #999;
+  color: $grey;
   font-size: 9px;
   text-transform: uppercase;
 }
 .thumb-wrapper.selected {
-  background-color: #fff;
+  background-color: $white;
   padding: 0 0 12px;
 }
 .thumb-wrapper.selected img {
   border: 0 none;
 }
 .pbr-thumb {
-  background: #ddd;
+  background: darken($offWhite, 25%);
   height: 80px;
   padding: 3px;
   width: 100px;
@@ -1736,7 +1737,7 @@ body.ext-ie7 .x-superboxselect-item {
   color: $darkNeutral;
 }
 .x-grid3-col-info-col {
-  color: #92AF4C;
+  color: $mutedgreen;
 }
 .not-installed .x-grid3-col-info-col {
   color: $red;
@@ -1749,7 +1750,7 @@ body.ext-ie7 .x-superboxselect-item {
   text-align: center;
 }
 .meta-wrapper {
-  color: #808080;
+  color: darken($grey,10%);
   max-height: 400px;
   overflow: auto;
   padding: 15px;
@@ -1775,11 +1776,11 @@ body.ext-ie7 .x-superboxselect-item {
 
 
 .upload-error{
-  color: #f00;
+  color: $red;
 }
 
 .upload-success{
-  color: #090;
+  color: $success;
 }
 
 .upload-status-text{
