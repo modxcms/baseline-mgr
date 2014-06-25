@@ -28,6 +28,9 @@ $fa-css-prefix:       icon;
 	Left Bar Tabs 		| _tabs.scss 	| .x-tab-strip li
 	Left Bar Tabs BG	| _tabs.scss	| .x-tab-panel-header ul.x-tab-strip-top or $tabStripBg
 	Active Tab Color 	| _tabs.scss 	| .x-tab-strip-active
+	Action (Save) Btns 	| _buttons.scss	| line 65ish  -  #modx-action-buttons & 
+	Page Header H2		| index			| below under Typography
+	
 	
 */
 
@@ -54,13 +57,13 @@ body, body.x-border-layout-ct {
 hr {
   background-color: $desaturatedSplash;
   border: 0;
-  color: #a1b7c4;
+  color: $midsky;
   height: 1px;
   margin: 20px;
 }
 
 .padding {
-  background-color: #fff;
+  background-color: $white;
   padding: 11px;
 }
 
@@ -379,7 +382,7 @@ a.x-grid-link:hover, a.x-grid-link:focus{ text-decoration: underline; }
 }
 
 .modx-console-text {
-  background-color: white;
+  background-color: $white;
   font: $bodyFontSize $codefonts !important;
   padding: 8px;
   border: none;
@@ -415,7 +418,7 @@ a.x-grid-link:hover, a.x-grid-link:focus{ text-decoration: underline; }
 }
 
 .x-portlet .x-panel-body {
-  background: white;
+  background: $white;
 }
 
 .x-portlet .x-panel-mc {
@@ -431,7 +434,7 @@ a.x-grid-link:hover, a.x-grid-link:focus{ text-decoration: underline; }
 }
 
 .x-portal-space h2 {
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 1px solid $neutral;
   margin: 0 0 8px;
   padding: 0 0 2px;
 }
@@ -514,22 +517,22 @@ a.x-grid-link:hover, a.x-grid-link:focus{ text-decoration: underline; }
 
 .ux-row-action-item:hover {
   background: #dfdfdf;
-  background: -moz-linear-gradient(center bottom, #dfdfdf 0%, white 100%) repeat scroll 0 0 transparent;
-  background: -ms-linear-gradient(center bottom, #dfdfdf 0%, white 100%);
-  background: -o-linear-gradient(center bottom, #dfdfdf 0%, white 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #dfdfdf));
-  background: -webkit-linear-gradient(center bottom, #dfdfdf 0%, white 100%);
-  background: linear-gradient(center bottom, #dfdfdf 0%, white 100%);
-  border: 1px solid #9caf78;
-  color: #636f4c !important;
+  background: -moz-linear-gradient(center bottom, $neutral 0%, $white 100%) repeat scroll 0 0 transparent;
+  background: -ms-linear-gradient(center bottom, $neutral 0%, $white 100%);
+  background: -o-linear-gradient(center bottom, $neutral 0%, $white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $white), color-stop(100%, $neutral));
+  background: -webkit-linear-gradient(center bottom, $neutral 0%, $white 100%);
+  background: linear-gradient(center bottom, $neutral 0%, $white 100%);
+  border: 1px solid $mutedgreen;
+  color: $darkGreen !important;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#dfdfdf,GradientType=0);
 }
 
 .ux-row-action-item:active {
-  background-color: #ffffff;
+  background-color: $white;
   background-image: none;
-  border-color: #CFCFCF #C0C0C0 #AAAAAA;
-  box-shadow: 0 0 3px #aaaaaa inset;
+  border-color: $neutral darken($neutral, 4%) darken($neutral, 10%);
+  box-shadow: 0 0 3px darken($neutral, 10%) inset;
   margin: 2px 1px 0;
 }
 
@@ -538,20 +541,20 @@ a.x-grid-link:hover, a.x-grid-link:focus{ text-decoration: underline; }
 }
 
 .ux-row-action-item {
-  background: -moz-linear-gradient(center bottom, gainsboro 0%, #fcfcfc 100%) repeat scroll 0 0 transparent;
-  background: -ms-linear-gradient(center bottom, gainsboro 0%, #fcfcfc 100%);
-  background: -o-linear-gradient(center bottom, gainsboro 0%, #fcfcfc 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, gainsboro));
-  background: -webkit-linear-gradient(center bottom, gainsboro 0%, #fcfcfc 100%);
-  background: linear-gradient(center bottom, gainsboro 0%, #fcfcfc 100%);
+  background: -moz-linear-gradient(center bottom, gainsboro 0%, $almostWhite 100%) repeat scroll 0 0 transparent;
+  background: -ms-linear-gradient(center bottom, gainsboro 0%, $almostWhite 100%);
+  background: -o-linear-gradient(center bottom, gainsboro 0%, $almostWhite 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $almostWhite), color-stop(100%, gainsboro));
+  background: -webkit-linear-gradient(center bottom, gainsboro 0%, $almostWhite 100%);
+  background: linear-gradient(center bottom, gainsboro 0%, $almostWhite 100%);
   background: url("/manager/templates/default/images/modx-theme/form/button-bg.png") repeat-x scroll 0 bottom gainsboro;
   border-collapse: separate;
-  border-color: #CACACA #C0C0C0 #AAA;
+  border-color: $neutral darken($neutral, 4%) darken($neutral, 10%);
   border-radius: 3px;
   border-style: solid;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 1px;
-  color: #444;
+  color: $almostBlack;
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fcfcfc,endColorstr=#dcdcdc,GradientType=0);
   float: left;
@@ -717,7 +720,7 @@ ul.modx-tag-list li.modx-tag-checked {
 }
 
 .modx-tv-th .tv-description {
-  color: #444;
+  color: $almostBlack;
   font-size: 11px;
   font-weight: normal;
 }

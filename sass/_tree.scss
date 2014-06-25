@@ -257,7 +257,7 @@
   background-image: url($imgPath + 'modx-theme/tree/loading.gif') !important;
 }
 .x-tree-node-loading a span {
-  color: #444444;
+  color: $almostBlack;
   font-style: italic;
 }
 .ext-ie .x-tree-node-el input {
@@ -487,7 +487,7 @@
   background-image: url($imgPath + 'modx-theme/tree/loading.gif') !important;
 }
 .x-tree-node-loading a span {
-  color: #444444;
+  color: $almostBlack;
   font-style: italic;
 }
 .ext-ie .x-tree-node-el input {

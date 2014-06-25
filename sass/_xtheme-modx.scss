@@ -37,7 +37,7 @@
 .ext-el-mask-msg div {
   background-color: transparent;
   border: 0 none;
-  color: #444;
+  color: $almostBlack;
   font: $fontSmall;
 }
 
@@ -236,7 +236,7 @@
 }
 
 .x-paging-info {
-  color: #444;
+  color: $almostBlack;
 }
 
 .x-toolbar-more-icon {
@@ -550,7 +550,7 @@ td.x-grid3-hd-menu-open .x-grid3-hd-inner {
   border-right: 1px solid #DADADA !important;
 }
 .x-grid3-body .x-grid3-td-numberer .x-grid3-cell-inner {
-  color: #444;
+  color: $almostBlack;
   padding-left: 10px;
   padding-top: 10px !important;
 }

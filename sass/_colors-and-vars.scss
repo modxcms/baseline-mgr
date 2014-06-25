@@ -1,15 +1,22 @@
 /* main colors */
+
+$white: white;
+$almostWhite: #FCFCFC;
+
+$black: black;
+$almostBlack: #444444;
+
 $aside: rgb(248,248,248);
 $gainsboro: rgb(240,240,240);
 $actionable:rgb(251,251,251);
-$dropdownBg: #fff;
+$dropdownBg: $white;
 $dropdownSelectedBg: rgb(225,236,241);
-$dropdownTextColor: #444;
+$dropdownTextColor: $almostBlack;
 $dropdownBorder: #e4e4e4;
 $menuBg: #2b3948;
 $menuSelectedBg: lighten(#2b3948, 10%);
 $menuTextColor: #f2f2f2;
-$white: white;
+
 $mainBg: #F2F2F2;
 $softGrey: rgb(220, 220, 220);
 $darkNeutral:#53595F;
@@ -20,12 +27,15 @@ $gridrowalt: #F5F6F9;
 $searchresults: rgb(42,57,73);
 $searchresultshead: rgb(85,187,231);
 $mutedblue: #535d6c;
+$mutedgreen: #9caf78;
+$darkGreen: #636f4c;
 $softligthBlue: #d2dbe2;
+$midsky: #a1b8c5;
+$neutral: #d4d4d4;
 
 $lightBg: $gainsboro;
 $darkBg: $darkNeutral;
 $mediumBg:$aside;
-
 
 $labelText:$darkNeutral;
 $primaryAction: rgb(88, 165, 152);
