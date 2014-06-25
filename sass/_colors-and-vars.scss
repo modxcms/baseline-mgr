@@ -18,6 +18,8 @@ $gainsboro: rgb(240,240,240);
 $softGrey: rgb(220, 220, 220);
 $neutral: #d4d4d4;
 
+$tan: #aca899;
+
 $softligthBlue: #d2dbe2;
 $pastelLightBlue: rgb(225,236,241);
 $midsky: #a1b8c5;
@@ -109,7 +111,7 @@ $primaryBorder: $softGrey;
 $shadower: 0 1px 0 $borderShadow, -1px 0 0 $borderShadow, 1px 0 0 $borderShadow;
 
 $tabBg: $white;
-$tabStripBg: $almostWhite;
+$tabStripBg: darken($mainBg, 1%);
 $tabInactiveBg: $navbarBg;
 $tabHoverBg: $navbarHover;
 $tabText: $colorSplash;

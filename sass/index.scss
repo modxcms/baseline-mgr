@@ -966,7 +966,7 @@ body.ext-ie7 .x-superboxselect-item {
 /* Panel description text */
 .panel-desc {
   background-color: $offWhite;
-  border: 1px solid darken($offWhite, 25%) !important;
+  border: 1px solid darken($mainBg, 5%) !important;
   color: $darkNeutral;
   line-height: 1.5;
   margin-top: 5px;
@@ -986,7 +986,7 @@ body.ext-ie7 .x-superboxselect-item {
 }
 
 .win-desc {
-  background: #DFDFDF;
+  background: $softGrey;
   background: -moz-linear-gradient(center bottom, lighten($neutral, 15%) 0%, $offWhite 100%) repeat scroll 0 0 transparent;
   background: -ms-linear-gradient(center bottom, lighten($neutral, 15%) 0%, $offWhite 100%);
   background: -o-linear-gradient(center bottom, lighten($neutral, 15%) 0%, $offWhite 100%);

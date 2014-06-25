@@ -34,7 +34,7 @@
 
   .x-layout-mini {
     left: -11px;
-    background-color: #fff;
+    background-color: $white;
     width: 10px;
     height: 50px;
     background-image: none;
@@ -275,16 +275,16 @@
   color: $treeText;
 }
 .x-tree-node div.x-tree-drag-insert-below {
-  border-bottom-color: #686868;
+  border-bottom-color: darken($grey, 20%);
 }
 .x-tree-node div.x-tree-drag-insert-above {
-  border-top-color: #686868;
+  border-top-color: darken($grey, 20%);
 }
 .x-tree-dd-underline .x-tree-node div.x-tree-drag-insert-below a {
-  border-bottom-color: #686868;
+  border-bottom-color: darken($grey, 20%);
 }
 .x-tree-dd-underline .x-tree-node div.x-tree-drag-insert-above a {
-  border-top-color: #686868;
+  border-top-color: darken($grey, 20%);
 }
 .x-tree-node .x-tree-drag-append a span {
   background-color: $selected;
@@ -574,19 +574,19 @@
   color: lighten($treeText, 50%);
 }
 .x-tree-node div.x-tree-drag-insert-below {
-  border-bottom-color: #686868;
+  border-bottom-color: darken($grey, 20%);
 }
 .x-tree-node div.x-tree-drag-insert-above {
-  border-top-color: #686868;
+  border-top-color: darken($grey, 20%);
 }
 .x-tree-dd-underline .x-tree-node div.x-tree-drag-insert-below a {
-  border-bottom-color: #686868;
+  border-bottom-color: darken($grey, 20%);
 }
 .x-tree-dd-underline .x-tree-node div.x-tree-drag-insert-above a {
-  border-top-color: #686868;
+  border-top-color: darken($grey, 20%);
 }
 .x-tree-node .x-tree-drag-append a span {
-  background-color: #ddd;
+  background-color: darken($offWhite, 20%);
   border-color: $borderColor;
 }
 .x-tree-node .x-tree-node-over {
