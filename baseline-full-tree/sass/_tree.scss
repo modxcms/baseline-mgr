@@ -4,7 +4,7 @@
 #modx-leftbar {
   /* the main container + bg behind the tabs */
   & .x-tab-panel-noborder {
-    margin: 15px;
+    margin: 0;
   }
   /* the toolbars just below the tabs */
   & .x-toolbar {
@@ -20,8 +20,7 @@
   }
 }
 
-#modx-leftbar-tabpanel {
-}
+#modx-leftbar-tabpanel { width: auto !important;}
 
 /* tree menu splitter */
 .x-layout-split {
@@ -40,7 +39,7 @@
     background-image: none;
     background-repeat: no-repeat;
     background-position: center left;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0;
     opacity: 1;
 
     &:after {
@@ -212,7 +211,7 @@
 
 .tree-pseudoroot-node {
   background-color: $treeNodeBg;
-  border-radius: 4px;
+  border-radius: 0;
   font: $treePseudoRootFont;
   position:relative;
   padding: 0 0 0 4px;

@@ -193,8 +193,11 @@ em {
   position: absolute;
 }
 
+#modx-content{top: 0 !important;}
 #modx-leftbar{
 	background: $whitishBlue;
+	top: 0 !important;
+	height: 100%;
 }
 
 .modx-form p {
@@ -259,6 +262,7 @@ em {
 
 .x-tab-panel-header {
 	@include box-sizing(border-box);
+	margin-top: 2px;
 	.x-tab-strip {
 		li {
 			@include box-sizing(border-box);
@@ -957,7 +961,7 @@ body.ext-ie7 .x-superboxselect-item {
 /* MODExt common classes */
 
 .container {
-  margin: 20px 15px 80px;
+  margin: 20px 15px 20px;
 }
 
 /* Wrap the main content */

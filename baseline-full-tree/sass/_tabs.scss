@@ -1,7 +1,5 @@
 /* top area around the tab strip */
 .x-tab-panel-noborder {
-  border: 1px solid #E2E3DE;
-  margin: 20px 0 10px;
   overflow: visible;
 
   #modx-leftbar & {
@@ -69,7 +67,7 @@
     cursor: default;
     margin: 0 0 0 2px;
     padding-bottom: 2px;
-    border-radius: 2px 2px 0 0;
+    border-radius: 0;
 
     .vertical-tabs-header & {
       border-radius: 0;

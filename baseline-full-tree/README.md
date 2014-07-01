@@ -2,8 +2,7 @@
 
 1. Duplicate the *default* theme folder on your server.
 2. Replace header.tpl
-3. Replace /js folder
-4. Replace /css folder
+3. Replace /css folder
 
 ---
 
