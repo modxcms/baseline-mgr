@@ -17,28 +17,29 @@ baseline-mgr
 
 ###Theme Folder Setup
 
-1. Download Baseline Zip from [GitHub](https://github.com/modxcms/baseline-mgr)
-2. SSH into your site using the credentials from your Dashboard. Change **c1286** to your cloud number
+1. Download the Baseline Repo from [GitHub](https://github.com/modxcms/baseline-mgr)
+2. Zip the theme folder you want to install
+3. SSH into your site using the credentials from your Dashboard. Change **c1286** to your cloud number
 
   `ssh c1286@paas1.tx.modxcloud.com`
 
  - Say Yes to continue connecting (if prompted)
  - Enter the cloud SSH password
 
-3. Duplicate the "default" folder - Example name is "baseline"
+4. Duplicate the "default" folder - Example name is "baseline"
  
   `cp -r www/manager/templates/default www/manager/templates/baseline`
 
-4. From a new Terminal Window - upload the Downloaded Zip
+5. From a new Terminal Window - upload the theme folder you Zipped. Below is just an example.
 
-  ```scp ~/Downloads/baseline-mgr-master.zip c1286@paas1.tx.modxcloud.com:/home/www/manager/templates/baseline```
+  ```scp ~/Downloads/baseline-mgr-master/baseline.zip c1286@paas1.tx.modxcloud.com:/home/www/manager/templates/baseline```
 
-7. Back to your SSH Cloud Server Terminal Window - Go to the Template Folder
+6. Back to your SSH Cloud Server Terminal Window - Go to the Template Folder
 ```
 cd www/manager/templates/baseline
-unzip baseline-mgr-master.zip
+unzip baseline.zip
 mkdir sass/
-mv baseline-mgr-master/sass/* sass/
+mv baseline/sass/* sass/
 ```
 
 ---
