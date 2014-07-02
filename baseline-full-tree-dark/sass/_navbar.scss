@@ -1,12 +1,10 @@
 /* Main MODX Manager navbar */
 #modx-header {
-    background: $darkBlue;
-    min-height:55px; // #janky #extjs
-    width:auto !important;
+    background: $navbarBg;
+    height:55px; 
+    width: auto !important;
 }
 #modx-navbar {
-  @include background-image(linear-gradient(to right, rgb(63,72,80) 0%, rgb(54,84,98) 46%, rgb(62,85,84) 60%, rgb(66,85,77) 68%, rgb(87,61,78) 100%));
-  box-shadow: 0 2px 0 $borderShadow;
   height: 100%;
   position: relative;
   z-index: 10;
@@ -29,7 +27,6 @@
   padding: 0;
 
   li {
-    border-right: 1px solid $navbarBorder;
   }
 }
 
