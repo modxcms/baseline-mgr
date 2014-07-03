@@ -8,10 +8,10 @@ baseline-mgr
 ###Cloud & Compass Setup
 
 1. Create a new MODX 2.3 project in MODX Cloud. 
-2. Note the name of the internal Cloud URL where you would like to work on a Manager theme. It will look like **cNNNN@paas1.tx.modxcloud.com** where **NNNN** is actually a 4-digit number. _Note: "paas1" might be "paas2", and "tx" might be "ams"._ 
-3. Open a ticket from the MODX Cloud Dashboard, by clicking the Green “Help” button, substituting the real location from step 2 above for "cNNNN@paas1.tx.modxcloud.com".  
+2. Note the name of the internal Cloud URL where you would like to work on a Manager theme. It will look like **cNNNN.paas1.tx.modxcloud.com** where **NNNN** is actually a 4-digit number. _Note: "paas1" might be "paas2", and "tx" might be "ams"._ 
+3. Open a ticket from the MODX Cloud Dashboard, by clicking the Green “Help” button, substituting the real location from step 2 above for "cNNNN.paas1.tx.modxcloud.com".  
   - For the question: Sassify Me
-  - Details:  I'm ready to create a new Manager theme, and need Sass installed in cNNNN@paas1.tx.modxcloud.com
+  - Details:  I'm ready to create a new Manager theme, and need Sass installed in cNNNN.paas1.tx.modxcloud.com
 4. Wait for your Ticket Reply confirming your Cloud is ready.
 
 ---
