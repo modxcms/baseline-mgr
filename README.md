@@ -24,11 +24,11 @@ baseline-mgr
 Even before you've received a confirmation that your project is ready to use Sass, you can get prepare to start working on your theme. Follow these steps to get your theme set up.
 
 1. SSH into your site using the credentials from your Dashboard. Change **cNNNN** to your cloud number
-
+  
   `ssh cNNNN@paas1.tx.modxcloud.com`
-
- - Say Yes to continue connecting (if prompted)
- - Enter the cloud SSH password
+  
+  - Say Yes to continue connecting (if prompted)
+  - Enter the cloud SSH password
 
 2. Go to the Manager templates folder and set up your new theme. For example to create a theme named **mytheme** enter the following command to create an empty `mytheme/` directory inside your `manager/templates/` directory:
 ```
@@ -36,21 +36,20 @@ mkdir www/manager/templates/mytheme
 ```
 
 3. Create a directory for the base starting points and checkout the Baseline Repo from [GitHub](https://github.com/modxcms/baseline-mgr). This will clone the baseline repo into a new `baseline` directory in your `manager/` directory. There will be 3 different versions from which to choose.
-
- - **baseline**—a clone of the MODX default theme
- - **baseline-full-tree**—a version of the MODX default theme with a full-height left bar for the tree menus
- - **baseline-full-tree-dark**—a dark version of full tree, inspired by [Sterc's original Manager redesign mockup](http://f.cl.ly/items/1P2Y3I2t3X1r3G1Y0l2D/modx-23-2II.png)
-
-
-```
-cd www/manager
-git clone git://github.com/modxcms/baseline-mgr.git baseline
-```
-
-_Need to show screenshots_
+  
+  - **baseline**—a clone of the MODX default theme
+  - **baseline-full-tree**—a version of the MODX default theme with a full-height left bar for the tree menus
+  - **baseline-full-tree-dark**—a dark version of full tree, inspired by [Sterc's original Manager redesign mockup](http://f.cl.ly/items/1P2Y3I2t3X1r3G1Y0l2D/modx-23-2II.png)
+  
+  ```
+  cd www/manager
+  git clone git://github.com/modxcms/baseline-mgr.git baseline
+  ```
+  
+  _Need to show screenshots_
 
 4. Duplicate the your chosen starting point into your `mytheme` directory. For example, to start from the dark full tree version: 
- 
+  
   `cp -r baseline/baseline-full-tree-dark mytheme`
 
 
