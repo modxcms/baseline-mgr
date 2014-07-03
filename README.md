@@ -35,8 +35,15 @@ Even before you've received a confirmation that your project is ready to use Sas
   ```
 3. Duplicate the your chosen starting point into your a new theme name directory of your choosing. For example, to create a theme based on the dark full height leftbar called **mytheme** you would use a `mytheme` directory: 
    
-  ```cp -r baseline/baseline-full-tree-dark templates/mytheme```
-
+  ```
+  cp -r baseline/baseline-full-tree-dark templates/mytheme
+  ```
+4. Install Bourbon into the Sass folder; you can also optionally install Neat in the same way, too:
+  
+  ```
+  cd templates/mytheme/sass
+  bourbon intstall
+  ```
 
 ---
 
