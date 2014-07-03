@@ -16,7 +16,7 @@ baseline-mgr
 
 ---
 
-###Theme Folder Setup
+###Theme Development Setup
 
 Even before you've received a confirmation that your project is ready to use Sass, you can get prepare to start working on your theme. Follow these steps to get your theme set up.
 
@@ -24,18 +24,18 @@ Even before you've received a confirmation that your project is ready to use Sas
   ```ssh cNNNN@paas1.tx.modxcloud.com```
   - Say Yes to continue connecting (if prompted)
   - Enter the cloud SSH password
-2. Go to the Manager templates folder and set up your new theme. For example to create a theme named **mytheme** enter the following command to create an empty `mytheme/` directory inside your `manager/templates/` directory:
-  ```mkdir www/manager/templates/mytheme```
-3. Clone the [baseline Manager theme repo](https://github.com/modxcms/baseline-mgr) into a new `baseline` directory inside your `manager/` directory. The baseline repo contains 3 versions for starting points on custom Manager themes.
+2. Clone the [baseline Manager theme repo](https://github.com/modxcms/baseline-mgr) into a new `baseline` directory inside your `manager/` directory. The baseline repo contains 3 versions for starting points on custom Manager themes.
   - **baseline**—a clone of the MODX default theme
   - **baseline-full-tree**—a version of the MODX default theme, but with a full-height left bar for the tree menus
   - **baseline-full-tree-dark**—a dark version of full tree, inspired by [Sterc's original Manager redesign mockup](http://f.cl.ly/items/1P2Y3I2t3X1r3G1Y0l2D/modx-23-2II.png)
+   
   ```
   cd www/manager
   git clone git://github.com/modxcms/baseline-mgr.git baseline
   ```
-4. Duplicate the your chosen starting point into your `mytheme` directory. For example, to start from the dark full tree version: 
-  ```cp -r baseline/baseline-full-tree-dark mytheme```
+3. Duplicate the your chosen starting point into your a new theme name directory of your choosing. For example, to create a theme based on the dark full height leftbar called **mytheme** you would use a `mytheme` directory: 
+   
+  ```cp -r baseline/baseline-full-tree-dark templates/mytheme```
 
 
 ---
@@ -47,7 +47,7 @@ Once you've received confirmation that you Sass is functioning in your project, 
 1. Create your compass setup:
    
   ```
-  cd mytheme
+  cd templates/mytheme
   compass create --bare --sass-dir "sass" --css-dir "css" --images-dir "images"
   ```
 2. Make sure you get "Congratulations"
