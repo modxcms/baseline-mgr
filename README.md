@@ -47,7 +47,7 @@ Even before you've received a confirmation that your project is ready to use Sas
 
 ---
 
-###Set your Compass
+###Set Your Compass
 
 Once you've received confirmation that you Sass is functioning in your project, you can now use Compass to automatically compile the chnages into new CSS files anytime your Sass files are updated.
 
@@ -87,3 +87,4 @@ compass watch
 ###Installing Your Theme in Other Projects
 
 To copy your theme into another project, you simply download the `manager/templates/mytheme/` directory, and upload it to the new istallation. Then follow the steps in the previous section to change to the new theme.
+
