@@ -8,16 +8,13 @@ baseline-mgr
 
 ## Overview
 
-The MODX Manager theme is straightforward to customize and change to suit your preferences. Even drastic alterations are relatively quick, because the Manager has been rebuilt in 2.3 and above using Sass for its styling. By adjusting a few variables, you can make significant changes in how it looks. While the steps that follow may seem intimidating, they're actually quite simple and fast to do. In fact, getting ready to create a custom MODX Manager theme consists of just four steps:
+The MODX Manager theme is straightforward to customize and change to suit your preferences. Drastic alterations for branding are relatively quick, because the Manager has been rebuilt in 2.3 and above using Sass for its styling. This readme file provides an overview of the files that make up a Manager theme, and the files you need to adjust in order to create a custom MODX Manager theme. 
 
-1. Get Sass running in your MODX Cloud instance
-2. Bootstrap the starting point for your Custom Theme and pick a name for your theme
-3. Start `compass watch` to compile your Sass changes into new CSS files
-4. Selecting your new theme in the System Settings and making changes to the Sass files
+In order to work with Manager themes, you typically have to clone the project from the MODX Github repository and to be able to have Ruby and Node.js running for the dependencies. However, there is an alternate way to work on Manager themes without having to install additional dependencies on your server or in your local dev machine by using MODX Cloud, as outlined below. 
 
-That's all it takes before you can start seeing your Sass changes in a live MODX Manager just by hitting `⌘R` or `⇧F5` to see your changes in near real time.  
+---
 
-##Manager Theme Files
+###Manager Theme Files
 Manager Themes can be highly customized, replacing every file in the Default theme, or you can just use a few styles and make selective overrides. You can even change the way the Manager works by including custome ExtJS files, but that is beyond the scope of this introductory overview. Manager themes are located in the `manager/templates/` directory, and the MODX Manager automatically scans the `manager/templates/` directory and lists any directories located there in the Manager Theme System Setting. 
 
 A custom Manager theme will usually contains the following directories:
@@ -29,7 +26,7 @@ A custom Manager theme will usually contains the following directories:
 
 There are many other directories located in the `default` manager theme, most of them being the layout templates, ending in `.tpl`. You can create custom .tpl files should you wish, but it's not needed most of the time.
 
-##The `sass` Directory
+###The `sass` Directory
 
 The Sass files are probably the most imortant files when it comes to creating a custom theme. For example, a clients might want branded colors and their logo in their Manager. This is where those changes would get made. The main Sass files you'll modify are as follows:
 
@@ -55,9 +52,18 @@ In addition, there are a few mixin and helper/utility Sass files:
 * `_utility.scss` – mixins that don't output directly, but that can be used as helpers for things like image replacement, Font Awesome calls, hiding things visually, etc., via Sass extends functions.
 
 
----
-
 ##Manager Theming with Sass in MODX Cloud
+
+By adjusting a few variables, you can make significant changes in how it looks. While the steps that follow may seem intimidating, they're actually quite simple and fast to do. In fact, getting ready to create a custom MODX Manager theme consists of just four steps:
+
+1. Get Sass running in your MODX Cloud instance
+2. Bootstrap the starting point for your Custom Theme and pick a name for your theme
+3. Start `compass watch` to compile your Sass changes into new CSS files
+4. Selecting your new theme in the System Settings and making changes to the Sass files
+
+That's all it takes before you can start seeing your Sass changes in a live MODX Manager just by hitting `⌘R` or `⇧F5` to see your changes in near real time.  
+
+---
 
 ###1. Request Sass in your MODX Cloud Account
 
@@ -156,5 +162,5 @@ compass watch
 
 ###Installing Your Theme in Other Projects
 
-To use your theme on another MODX instance, you download the `manager/templates/mytheme/` directory, and upload it to the new installation, inside its `manager/templates/` directory. Then follow the steps above in _See Your New Theme in Action_  to change the System Settings to use your custom theme. 
+To use your theme on another MODX instance, you download the `manager/templates/mytheme/` directory, and upload it to the new installation, inside its `manager/templates/` directory. Then follow the steps above in _See Your New Theme in Action_  to change the System Settings to use your custom theme. Please note that your final Manager theme should go through a proper build process, which involves some additional dependencies to properly optimize the theme for distribution, but that is outside the scope of this document.
 
