@@ -139,9 +139,9 @@ You can now use Compass to automatically compile the chnages into new CSS files 
 
 ###Making Changes to the Sass Files
 
-If you want to purely use MODX for editing your Manager Sass files, we'd suggest installing the  [Ace MODX Extra](http://modx.com/extras/package/ace), the same editor used by Github. 
+If you want to purely use MODX for editing your Manager Sass files, we'd suggest installing the  [Ace MODX Extra](http://modx.com/extras/package/ace), the same editor used by Github and self-proclaimed high performance code editor for the web. Find out more information about [how to work with Ace at its website](http://ace.c9.io/#nav=about) 
 
-1. Install ACE like you would other Extras, using the Package Manager
+1. Install Ace like you would other Extras, using the Package Manager
 2. Move to the Files tab in the Manager Tree panel
 3. Navigate to the `manager/templates/mytheme/sass` directory
 4. Click the files you wish to load to make changes
