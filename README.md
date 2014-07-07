@@ -90,5 +90,5 @@ compass watch
 
 ###Installing Your Theme in Other Projects
 
-To copy your theme into another project, you simply download the `manager/templates/mytheme/` directory, and upload it to the new istallation. Then follow the steps in the previous section to change the system settings to use the new theme. The MODX Manager automatically scans the `manager/templates/` directory for themes. 
+To use your theme on another MODX instance, you download the `manager/templates/mytheme/` directory, and upload it to the new installation, inside its `manager/templates/` directory. Then follow the steps above in _See Your New Theme in Action_  to change the System Settings to use your custom theme. This works because the MODX Manager automatically scans the `manager/templates/` directory for themes. 
 
