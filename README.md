@@ -21,7 +21,10 @@ baseline-mgr
 Use the following steps once your site is ready for Sass, to bootstrap your theme. 
 
 1. SSH into your site using the credentials from your Dashboard. Change **cNNNN** to your cloud number
-  ```ssh cNNNN@paas1.tx.modxcloud.com```
+   
+  ```
+  ssh cNNNN@paas1.tx.modxcloud.com
+  ```
   - Say Yes to continue connecting (if prompted)
   - Enter the cloud SSH password
 2. Clone the [baseline Manager theme repo](https://github.com/modxcms/baseline-mgr) into a new `baseline` directory inside your `manager/` directory. The baseline repo contains 3 versions for starting points on custom Manager themes.
