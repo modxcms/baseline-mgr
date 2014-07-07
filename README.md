@@ -18,7 +18,7 @@ baseline-mgr
 
 ###Theme Development Setup
 
-Even before you've received a confirmation that your project is ready to use Sass, you can get prepare to start working on your theme. Follow these steps to get your theme set up.
+Use the following steps once your site is ready for Sass, to bootstrap your theme. 
 
 1. SSH into your site using the credentials from your Dashboard. Change **cNNNN** to your cloud number
   ```ssh cNNNN@paas1.tx.modxcloud.com```
@@ -33,7 +33,7 @@ Even before you've received a confirmation that your project is ready to use Sas
   cd www/manager
   git clone git://github.com/modxcms/baseline-mgr.git baseline
   ```
-3. Duplicate the your chosen starting point into your a new theme name directory of your choosing. For example, to create a theme based on the dark full height leftbar called **mytheme** you would use a `mytheme` directory: 
+3. Duplicate your chosen starting point into a new theme name directory of your choosing. For example, to create a theme based on the dark full height leftbar called **mytheme** you would use a `mytheme` directory: 
    
   ```
   cp -r baseline/baseline-full-tree-dark templates/mytheme
@@ -49,9 +49,9 @@ Even before you've received a confirmation that your project is ready to use Sas
 
 ###Set Your Compass
 
-Once you've received confirmation that you Sass is functioning in your project, you can now use Compass to automatically compile the chnages into new CSS files anytime your Sass files are updated.
+You can now use Compass to automatically compile the chnages into new CSS files anytime the Sass files are updated.
 
-1. Create your compass setup:
+1. Set up Compass:
    
   ```
   cd templates/mytheme
@@ -59,7 +59,7 @@ Once you've received confirmation that you Sass is functioning in your project, 
   ```
 2. Make sure you get "Congratulations"
 3. Type `compass watch`
-4. You should see it compile SASS and create **index.css** with the notification:
+4. You should see it compile Sass and create **index.css** with the notification:
   `Compass is polling for changes. Press Ctrl-C to Stop.`
 5. Compass will now update your theme's CSS files anytime you save a change to the Sass files.
 
@@ -67,7 +67,8 @@ Once you've received confirmation that you Sass is functioning in your project, 
 
 ###Working with Existing Projects
 
-Chances are, you'll be working on your theme over a few sessions. If you've already installed everything, ssh into your project using the instructions above, then enter the following commands:
+Chances are, you'll work on your theme over a few sessions. If you've already installed everything, ssh into your project using the instructions above, then enter the following commands:
+
 ```
 cd www/manager/templates/mytheme
 compass watch
@@ -86,5 +87,5 @@ compass watch
 
 ###Installing Your Theme in Other Projects
 
-To copy your theme into another project, you simply download the `manager/templates/mytheme/` directory, and upload it to the new istallation. Then follow the steps in the previous section to change to the new theme.
+To copy your theme into another project, you simply download the `manager/templates/mytheme/` directory, and upload it to the new istallation. Then follow the steps in the previous section to change the system settings to use the new theme. The MODX Manager automatically scans the `manager/templates/` directory for themes. 
 
