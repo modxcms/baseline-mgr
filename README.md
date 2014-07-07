@@ -1,11 +1,26 @@
 baseline-mgr
 ============
 
+##Getting Started with Sass for the MODX Manager in MODX Cloud
+
 
 > Written by [Wayne Roddy](wayne@modx.com). June 19, 2014
 
+### Overview
 
-###Cloud & Compass Setup
+The MODX Manager theme is straightforward to customize and change to suit your preferences. Even drastic alterations are relatively quick, because the Manager has been rebuilt in 2.3 and above using Sass for its styling. By adjusting a few variables, you can make significant changes in how it looks. While the steps that follow may seem intimidating, they're actually quite simple and fast to do. In fact, getting ready to create a custom MODX Manager theme consists of just four steps:
+
+1. Get Sass running in your MODX Cloud instance
+2. Bootstrap the starting point for your Custom Theme and pick a name for your theme
+3. Start `compass watch` to compile your Sass changes into new CSS files
+4. Selecting your new theme in the System Settings and making changes to the Sass files
+
+That's all it takes before you can start seeing your Sass changes in a live MODX Manager just by hitting `⌘R` or `⇧F5` to see your changes in near real time.  
+
+---
+
+
+###1. Request Sass in your MODX Cloud Account
 
 1. Create a new MODX 2.3 project in MODX Cloud. 
 2. Note the name of the internal Cloud URL where you would like to work on a Manager theme. It will look like **cNNNN.paas1.tx.modxcloud.com** where **NNNN** is actually a 4-digit number. _Note: "paas1" might be "paas2", and "tx" might be "ams"._ 
@@ -16,7 +31,7 @@ baseline-mgr
 
 ---
 
-###Theme Development Setup
+###2. Bootstrapping Manager Themes
 
 Use the following steps once your site is ready for Sass, to bootstrap your theme. 
 
@@ -50,7 +65,7 @@ Use the following steps once your site is ready for Sass, to bootstrap your them
 
 ---
 
-###Set Your Compass
+###3. Set Your Compass
 
 You can now use Compass to automatically compile the chnages into new CSS files anytime the Sass files are updated.
 
@@ -68,7 +83,20 @@ You can now use Compass to automatically compile the chnages into new CSS files 
 
 ---
 
-###Working with Existing Projects
+###4. See Your New Theme in Action
+
+1. Login to the Manager for your theming project
+2. Go to System Settings
+3. "Filter by Area" -> Back-end Manager
+4. Scroll Down to "Manager Theme" and choose your theme from the select list options
+
+---
+
+###Making Changes to the Sass Files
+
+If you want to purely use MODX for editing your Manager Sass files, we'd suggest installing the  (Ace MODX Extra)[http://modx.com/extras/package/ace], the same editor used by Github. Install it like you would other Extras, using the Package Manager.
+
+###Returning to Existing Manage Theme Projects in Progress
 
 Chances are, you'll work on your theme over a few sessions. If you've already installed everything, ssh into your project using the instructions above, then enter the following commands:
 
@@ -76,15 +104,6 @@ Chances are, you'll work on your theme over a few sessions. If you've already in
 cd www/manager/templates/mytheme
 compass watch
 ```
-
----
-
-###See Your New Theme in Action
-
-1. Login to the Manager for your theming project
-2. Go to System Settings
-3. "Filter by Area" -> Back-end Manager
-4. Scroll Down to "Manager Theme" and choose your theme from the select list options
 
 ---
 
