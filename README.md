@@ -1,12 +1,12 @@
 baseline-mgr
 ============
 
-##Getting Started with Sass for the MODX Manager in MODX Cloud
+#Sass in the MODX 2.3 Manager & MODX Cloud
 
 
-> Written by [Wayne Roddy](wayne@modx.com). June 19, 2014
+> Written by [Wayne Roddy](wayne@modx.com) and [Ryan Thrash](ryan@modx.com). July 7, 2014
 
-### Overview
+## Overview
 
 The MODX Manager theme is straightforward to customize and change to suit your preferences. Even drastic alterations are relatively quick, because the Manager has been rebuilt in 2.3 and above using Sass for its styling. By adjusting a few variables, you can make significant changes in how it looks. While the steps that follow may seem intimidating, they're actually quite simple and fast to do. In fact, getting ready to create a custom MODX Manager theme consists of just four steps:
 
@@ -17,8 +17,47 @@ The MODX Manager theme is straightforward to customize and change to suit your p
 
 That's all it takes before you can start seeing your Sass changes in a live MODX Manager just by hitting `⌘R` or `⇧F5` to see your changes in near real time.  
 
+##Manager Theme Files
+Manager Themes can be highly customized, replacing every file in the Default theme, or you can just use a few styles and make selective overrides. You can even change the way the Manager works by including custome ExtJS files, but that is beyond the scope of this introductory overview. Manager themes are located in the `manager/templates/` directory, and the MODX Manager automatically scans the `manager/templates/` directory and lists any directories located there in the Manager Theme System Setting. 
+
+A custom Manager theme will usually contains the following directories:
+
+* `sass/` – the baseline Sass files used to build the custom styling
+* `css/` – where `index.css` and `login.css` stylesheets are generated
+* `images/` – a copy of all images needed for the theme
+* `js/` (optional) – overrides for the overall layout of the MODX Manager, for instance to use a full-height tree menu, instead of it being nested underneath the top navigation. (see below)
+
+There are many other directories located in the `default` manager theme, most of them being the layout templates, ending in `.tpl`. You can create custom .tpl files should you wish, but it's not needed most of the time.
+
+##The `sass` Directory
+
+The Sass files are probably the most imortant files when it comes to creating a custom theme. For example, a clients might want branded colors and their logo in their Manager. This is where those changes would get made. The main Sass files you'll modify are as follows:
+
+* `index.scss` – the styles for the MODX Manager after logging in. This includes the majority of the _xxx.scss files inside.
+* `login.scss` – the styles for the MODX Manager login
+* `_colors-and-vars.scss` – probably the first starting point for your MODX Manager theming work. This is where all your baseline colors, font sets and other baseline styles are set that are used throughout the other Sass files.
+
+The additional Sass files that you may also wish to work with include:
+
+* `_buttons.scss` – the button styles used throughout the Manager 
+* `_forms.scss` – the styles that control how forms appear
+* `_help.scss` – the styles for the MODX help page inside the Manager
+* `_navbar.scss` – the styles for the top navigation
+* `_tabs.scss` – the styles for tabs, both horizontal and vertical
+* `_tree.scss` – the styles for the trees
+* `_uberbar.scss` – the styling for the überbar search and keyboard navigation tool
+* `_xtheme-modx.scss` – a custom version of the default ExtJS 3.x styles (in which we'd love your assistance in performing additional cleanup and purging of unused styles)
+
+In addition, there are a few mixin and helper/utility Sass files:
+
+* `_box-sizing.scss` – a simple box sizing mixin helper file
+* `_image-set.scss` – a mixin used to create multiple background images
+* `_utility.scss` – mixins that don't output directly, but that can be used as helpers for things like image replacement, Font Awesome calls, hiding things visually, etc., via Sass extends functions.
+
+
 ---
 
+##Manager Theming with Sass in MODX Cloud
 
 ###1. Request Sass in your MODX Cloud Account
 
@@ -117,5 +156,5 @@ compass watch
 
 ###Installing Your Theme in Other Projects
 
-To use your theme on another MODX instance, you download the `manager/templates/mytheme/` directory, and upload it to the new installation, inside its `manager/templates/` directory. Then follow the steps above in _See Your New Theme in Action_  to change the System Settings to use your custom theme. This works because the MODX Manager automatically scans the `manager/templates/` directory for themes. 
+To use your theme on another MODX instance, you download the `manager/templates/mytheme/` directory, and upload it to the new installation, inside its `manager/templates/` directory. Then follow the steps above in _See Your New Theme in Action_  to change the System Settings to use your custom theme. 
 
