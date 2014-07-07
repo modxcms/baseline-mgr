@@ -139,13 +139,14 @@ You can now use Compass to automatically compile the chnages into new CSS files 
 
 ###Making Changes to the Sass Files
 
-If you want to purely use MODX for editing your Manager Sass files, we'd suggest installing the  [Ace MODX Extra](http://modx.com/extras/package/ace), the same editor used by Github and self-proclaimed high performance code editor for the web. Find out more information about [how to work with Ace at its website](http://ace.c9.io/#nav=about) 
+If you want to purely use MODX for editing your Manager Sass files, we'd suggest installing the  [Ace MODX Extra](http://modx.com/extras/package/ace), the same editor used by Github and self-proclaimed high performance code editor for the web. Find out more information about [how to work with Ace at its website](http://ace.c9.io/#nav=about), but definitely try it out. It even provides helpful hints about things that you might consider changing next to lin numbers, and a lot more.
 
 1. Install Ace like you would other Extras, using the Package Manager
 2. Move to the Files tab in the Manager Tree panel
 3. Navigate to the `manager/templates/mytheme/sass` directory
 4. Click the files you wish to load to make changes
-5. Edit the files using syntax-highlighted editing, optionally clicking the upper-right expand icons for a full-window editing experience
+5. Edit the files using syntax-highlighted editing, optionally clicking the upper-right expand icons for a full-window editing experience.
+6. To save changes to the files, get out of fullscreen mode if you're in it and simply press the save button in the Manager. As long as you have not closed your terminal session that started `compass watch` it should see the changes and compile new login.css and/or index.css files for you.
 
 You can also use tools like Transmit to mount your `www/manager/templates/mytheme/sass/` directory to your desktop to use your favorite text editor, or other FTP programs to edit the file remotely.
 
